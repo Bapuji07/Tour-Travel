@@ -13,7 +13,6 @@ window.onscroll = () => {
     searchBtn.classList.remove('fa-times');
     menu.classList.remove('fa-times');
     navbar.classList.remove('active');
-    // loginForm.classList.remove('active');
 }
 
 menu.addEventListener('click', () => {
@@ -43,41 +42,44 @@ videoBtn.forEach(btn =>{
     })
 });
 
-var swiper = new Swiper(".review-slider", {
-//     spaceBetween: 20,
-//     loop: true,
-//     autoplay: {
-//         delay: 2500,
-//         disableOnInteraction: false,
-//     },
-//     breakpoints: {
-//         640: {
-//             slidesPerView: 1,
-//         },
-//         768: {
-//             slidesPerView: 2,
-//         },
-//         1024: {
-//             slidesPerView: 3,
-//         },
-//     },
-// });
-// var swiper = new Swiper(".brand-slider", {
-//     spaceBetween: 20,
-//     loop: true,
-//     autoplay: {
-//     delay: 2500,
-//     disableOnInteraction: false,
-//     },
-//     breakpoints: {
-//         640: {
-//         slidesPerView: 1,
-//         },
-//         768: {
-//         slidesPerView: 2,
-//         },
-//         1024: {
-//         slidesPerView: 3,
-//         },
-//     },
-// });
+document.addEventListener("DOMContentLoaded", function() {
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+        },
+        breakpoints: {
+            640: {
+            slidesPerView: 1,
+            },
+            768: {
+            slidesPerView: 2,
+            },
+            1024: {
+            slidesPerView: 3,
+            },
+        },
+    });
+    var swiper = new Swiper(".brand-slider", {
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+        },
+        breakpoints: {
+            640: {
+            slidesPerView: 1,
+            },
+            768: {
+            slidesPerView: 2,
+            },
+            1024: {
+            slidesPerView: 3,
+            },
+        },
+    });
+});
+

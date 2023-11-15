@@ -231,15 +231,15 @@ header .search-bar-container label:hover{
     object-fit: cover;
 }
 .home .controls{
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 5rem;
     background: rgba(0, 0, 0, .7);
     position: relative;
-    top: 10rem;
+    top: 20rem;
 }
 .home .controls .vid-btn{
-    height: 2rem;
-    width: 2rem;
+    height: 1rem;
+    width: 1rem;
     display: inline-block;
     border-radius: 50%;
     background: #fff;
@@ -373,11 +373,13 @@ header .search-bar-container label:hover{
     flex: 1 1 calc(33.33% - 1.5rem);
     height: 25rem;
     position: relative;
+    
 }
 .gallery .box-container .box img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+   
 }
 .gallery .box-container .box .content{
     position: absolute;
@@ -388,6 +390,8 @@ header .search-bar-container label:hover{
     background: rgba(0, 0, 0, .7);
     padding: 2rem;
     padding-top: 5rem;
+    
+    
 }
 .gallery .box-container .box:hover .content{
     top: 0;
@@ -500,7 +504,7 @@ header .search-bar-container label:hover{
 }
 .footer .box-container .box a:hover{
     color: var(--orange);
-    text-decoration: underline
+    text-decoration: underline;
 }
 .footer .credit{
     text-align: center;
@@ -622,4 +626,9 @@ header .search-bar-container label:hover{
     .contact .row form .inputBox input{
         width: 100%;
     }
+    .footer .box-container{
+        display: grid;
+        grid-template-columns: 6fr 6fr ;
+    }
+
 }
